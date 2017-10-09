@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<title>HANGMAN</title>
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body background="hope.jpg">
+
+<div class="header">
+
+	<h1>A F R I C A - R I S I N G</h1>
+	<h2>TIA - This is AFRICA</h2>
+	<p>Press any key to get started</p>
+
+</div>
+
+<div class="wrapper">
+
+    <div id="buttons">
+    </div>  
+
+    <p id="catagoryName"></p>
+    
+    <div id="hold">
+    </div>
+    
+    <p id="mylives"></p>
+    <p id="clue">Clue -</p>  
+
+	<div class="container">
+      <button id="hint">Hint</button>
+      <button id="reset">Play again</button>
+    </div>
+
+</div>
+
+<input type="text" id="userInput"=>Guess A Letter</input>
+<button onclick="test()">Submit</button>
+
+<script>
+	function test()
+	{
+		var userInput = document.getElementById("userInput").value;
+		var wordToGuess = ['Africa', 'Hope', 'Destiny', 'Success', 'Unity', 'Faith', 'Determination', 'Royalty', 'King', 'Mighty', 'Ivory', 'Ebony', 'Gold', 'Zebar', 'Lion', 'Giraffe', 'Wolf'];
+		var NumberOfGuessesRemaining = wordToGuess.length;
+
+		if(wordToGuess.includes(userInput))
+		{
+			document.write("You guessed right");
+		}
+		else
+		{
+			document.write("You guessed wrong");
+		}
+	}
+</script>
+
+</body>
+</html>
+
+
+
